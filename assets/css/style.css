@@ -1,5 +1,6 @@
 body {
-    background-image: url("../images/80s9.jpg");
+    /* background-image: url("../images/80s9.jpg"); */
+    background-color: blue;
 }
 
 h1 {
@@ -19,6 +20,7 @@ h1 {
     margin-top: 1px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b1:hover {
@@ -32,6 +34,7 @@ h1 {
     margin-top: 1px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b2:hover {
@@ -45,6 +48,7 @@ h1 {
     margin-top: 1px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b3:hover {
@@ -58,6 +62,7 @@ h1 {
     margin-top: 1px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b4:hover {
@@ -71,6 +76,7 @@ h1 {
     margin-top: 1px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b5:hover {
@@ -84,6 +90,7 @@ h1 {
     margin-top: 5px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b6:hover {
@@ -97,6 +104,7 @@ h1 {
     margin-top: 5px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b7:hover {
@@ -110,6 +118,7 @@ h1 {
     margin-top: 5px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b8:hover {
@@ -123,6 +132,7 @@ h1 {
     margin-top: 5px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b9:hover {
@@ -136,6 +146,7 @@ h1 {
     margin-top: 5px;
     border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
+    width: 8%;
 }
 
 #b10:hover {
