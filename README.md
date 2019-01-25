@@ -3,7 +3,7 @@ Endless Retro 80s!
 
 - The theme of this Giphy page is, 1980s.
 
-- The page will automatically generate 10 buttons, which each has an 80s theme.
+- The page will automatically generate 10 buttons, each has an 80s theme.
 
 - If the user clicks on one of the ten buttons, gif's related to that button theme will appear. 
 
@@ -11,7 +11,7 @@ Endless Retro 80s!
 
 - When the user clicks on a gif, it will then generate "animation." If clicked, again, the gif will go back to the "still" state.
 
-- There is a search bar on the page. The user can input any search, and then submit their new search topic.
+- There is a search bar ("Totally Radical Search") on the page. The user can input any search, and then click the submit button ("Like, Click Submit!) for their new search topic.
 
 - The new search will create a new button, which will generate gif's related to that topic, and those gif's will also have 
    the "still" and "animate" functionality.
