@@ -1,4 +1,3 @@
-
 // Array of search topics  and new search //
 
 var topics = ["80s Movies", "80s Music", "80s Fashion", "80s Arcade", "80s Television", "80s Technology", "80s Dance", "80s Hair", "80s Toys", "80s Cars"];
