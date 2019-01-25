@@ -1,11 +1,13 @@
 // / Document Ready //
+
 $(document).ready(function() {
 
-// Array of search topics  and new search //
+// Variables for topic array and new search buttons //
 
 var topics = ["80s Movies", "80s Music", "80s Fashion", "80s Arcade", "80s Television", "80s Technology", "80s Dance", "80s Hair", "80s Toys", "80s Cars"];
-// var newSearch = "";
 var newButtons;
+
+// Functions that generates and stores buttons for topic array // 
 
 function populateButtons() {
     var storeBtns = $("<div>");
@@ -26,7 +28,7 @@ function getButton(topic) {
     return bTag;
 }
 
-// Event Listener for 80's buttons //
+// Event Listener for 80s buttons //
 
 $("#button-grp").on("click", ".topics", function() {
 console.log("working");
@@ -54,6 +56,7 @@ console.log(response);
     for (var i = 0; i < outcome.length; i++) {
 
 // Ratings restriction and visibility //
+
         if (outcome[i].rating !== "r" && outcome[i].rating !== "pg-13") {
             
             var gif = $("<div>");
@@ -75,12 +78,6 @@ console.log(response);
     }
 });
 
-// Click Gif, still -> animate, click, again, animate -> still //
-
-// New search is generated based on USER input, and adds into existing array //
-
-
-
 // Function that creates new buttons on the page that are within the array //
 
 var newBtn = function() {
@@ -95,6 +92,8 @@ var newBtn = function() {
 }
 });
 
+// New search is generated based on USER input, and adds into existing array //
+
 $("form").on("submit", function(event) {
     event.preventDefault();
 
@@ -106,6 +105,8 @@ $("form").on("submit", function(event) {
     this.children("input").val("");
 
 });
+
+// Click Gif, still -> animate, click, again, animate -> still //
 
 $("#gif-placement").on("click", ".displayingGifs", function() {
     
