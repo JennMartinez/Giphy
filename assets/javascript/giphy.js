@@ -1,18 +1,36 @@
-// Array of search topics  and new search //
-
-var topics = ["80s Movies", "80s Music", "80s Fashion", "80s Arcade", "80s Television", "80s Technology", "80s Dance", "80s Hair", "80s Toys", "80s Cars"];
-var newSearch = "";
-var newButtons;
-
-
 // / Document Ready //
 $(document).ready(function() {
 
+// Array of search topics  and new search //
+
+var topics = ["80s Movies", "80s Music", "80s Fashion", "80s Arcade", "80s Television", "80s Technology", "80s Dance", "80s Hair", "80s Toys", "80s Cars"];
+// var newSearch = "";
+var newButtons;
+
+function populateButtons() {
+    var storeBtns = $("<div>");
+    storeBtns.attr("id", "topic-buttons");
+
+    for (var i = 0; i < topics.length; i++) {
+        storeBtns.append(getButton(topics[i]));
+    }
+
+    $("#button-grp").html(storeBtns);
+}
+
+function getButton(topic) {
+    var bTag = $("<button>");
+    bTag.addClass("topics");
+    bTag.attr("data-topic", topic);
+    bTag.text(topic);
+    return bTag;
+}
+
 // Event Listener for 80's buttons //
 
-$("button").on("click", function() {
-
-var name = $(this).attr("data-name");
+$("#button-grp").on("click", ".topics", function() {
+console.log("working");
+var name = $(this).attr("data-topic");
 
 // Store Giphy API URL for "topics" images //
 
@@ -44,6 +62,10 @@ console.log(response);
             var themeImg = $("<img>");
 
             themeImg.attr("src", outcome[i].images.fixed_height_still.url);
+            themeImg.attr("data-still", outcome[i].images.fixed_height_still.url);
+            themeImg.attr("data-animate", outcome[i].images.fixed_height.url);
+            themeImg.attr("data-state", "still");
+            themeImg.addClass("displayingGifs");
 
             gif.append(rateResult);
             gif.append(themeImg);
@@ -55,29 +77,9 @@ console.log(response);
 
 // Click Gif, still -> animate, click, again, animate -> still //
 
-$(".gif").on("click", function() {
-    
-    var data = $(this).attr("data-state");
-    
-        if (data === "still") {
-          $(this).attr("src", $(this).attr("data-animate"));
-          $(this).attr("data-state", "animate");
-        } else {
-          $(this).attr("src", $(this).attr("data-still"));
-          $(this).attr("data-state", "still");
-        }
-      });
-
 // New search is generated based on USER input, and adds into existing array //
 
-$("#submit-button").on("click", function(event) {
-    event.preventDefault();
-    newSearch = $("#search-bar").val().trim();
-    if (newSearch !== "") {
-        topics.push(newSearch);
-    }
-    newBtn();
-});
+
 
 // Function that creates new buttons on the page that are within the array //
 
@@ -92,4 +94,31 @@ var newBtn = function() {
         }
 }
 });
+
+$("form").on("submit", function(event) {
+    event.preventDefault();
+
+    var inputSrch = $(this).children("input").val().trim();
+    if ((inputSrch !== "") && (!topics.includes(inputSrch))) {
+        topics.push(inputSrch);
+        populateButtons();
+    }
+    this.children("input").val("");
+
+});
+
+$("#gif-placement").on("click", ".displayingGifs", function() {
+    
+    var stateOfGif = $(this).attr("data-state");
+    
+        if (stateOfGif === "still") {
+          $(this).attr("src", $(this).attr("data-animate"));
+          $(this).attr("data-state", "animate");
+        } else {
+          $(this).attr("src", $(this).attr("data-still"));
+          $(this).attr("data-state", "still");
+        }
+      });
+
+populateButtons();
 });
