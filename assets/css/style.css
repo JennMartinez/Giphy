@@ -10,149 +10,28 @@ h1 {
     text-align: center
 }
 
-.button-grp {
+/* Topic Buttons */
+
+.topics {
+    background-color: #00eeff;
+    margin-top: 1px;
+    border: 2px solid rgb(233, 43, 148);
+    width: 12%;
     text-align: center;
-}
-
-#b1 {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
     color: rgb(233, 43, 148);
-    width: 8%;
+    display:block; 
+    margin:0 auto;
+    font-family: 'Faster One'; 
+    font-size: 15px;
 }
 
-#b1:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-  }
-
-#b2 {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b2:hover {
+.topics:hover {
     background-color: rgb(233, 43, 148);
     color: #00eeff;
     border: 2px solid #00eeff;
 }
 
-#b3 {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b3:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b4 {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b4:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b5 {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b5:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b6 {
-    background-color: #00eeff;
-    margin-top: 5px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b6:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b7 {
-    background-color: #00eeff;
-    margin-top: 5px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b7:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b8 {
-    background-color: #00eeff;
-    margin-top: 5px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b8:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b9 {
-    background-color: #00eeff;
-    margin-top: 5px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b9:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
-
-#b10 {
-    background-color: #00eeff;
-    margin-top: 5px;
-    border: 2px solid rgb(233, 43, 148);
-    color: rgb(233, 43, 148);
-    width: 8%;
-}
-
-#b10:hover {
-    background-color: rgb(233, 43, 148);
-    color: #00eeff;
-    border: 2px solid #00eeff;
-}
+/* Search Bar Title */
 
 .search {
     text-align: center;
@@ -166,22 +45,52 @@ h1 {
     border: 2px solid #00eeff;
     padding-left: 22px;
     padding-right: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Faster One';
+    letter-spacing: 3px;
+    font-size: 17px;
 }
+
+#font:hover {
+    background-color: #00eeff;
+    color: #00eeff;
+    border: 2px solid rgb(233, 43, 148);
+    color: rgb(233, 43, 148);
+}
+
+/* Physical Search Bar */
 
 #search-bar {
     /* text-align: center; */
-    width: 10%;
+    width: 15%;
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 
-#submit-button {
-    /* text-align: center; */
+/* Submit Button */
+
+#sbtn {
     background-color: rgb(233, 43, 148);
     color: #00eeff;
     border: 2px solid #00eeff;
-    width: 15%;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Faster One';
+    letter-spacing: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
+
+#sbtn:hover {
+    background-color: #00eeff;
+    color: #00eeff;
+    border: 2px solid rgb(233, 43, 148);
+    color: rgb(233, 43, 148);
+}
+
+/* For new buttons that are generated from the search bar */
 
 .new {
     background-color: #00eeff;
@@ -195,4 +104,8 @@ h1 {
     background-color: rgb(233, 43, 148);
     color: #00eeff;
     border: 2px solid #00eeff;
+}
+
+outcome.rating {
+    color: rgb(233, 43, 148);
 }
