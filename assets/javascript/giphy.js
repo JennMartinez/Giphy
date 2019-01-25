@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 // Event Listener for 80's buttons //
 
-$("#topic-buttons").on("click", function() {
+$("button").on("click", function() {
 
 var name = $(this).attr("data-name");
 
