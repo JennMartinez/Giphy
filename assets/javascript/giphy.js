@@ -17,6 +17,7 @@ var name = $(this).attr("data-name");
 // Store Giphy API URL for "topics" images //
 
 var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=l2NLd9V2jVAFIXXXzvaTyyxql5N5pzLc&limit=10";
+console.log(queryURL);
 
 // AJAX GET request to the queryURL //
 
@@ -42,9 +43,9 @@ console.log(response);
             var rateResult = $("<p>").text("Rating: " + outcome[i].rating);
             var themeImg = $("<img>");
 
-            themeImg.attr("src", outcome.images.fixed_height.url);
+            themeImg.attr("src", outcome[i].images.fixed_height_still.url);
 
-            gif.append(p);
+            gif.append(rateResult);
             gif.append(themeImg);
 
             $("#gif-placement").prepend(gif);
