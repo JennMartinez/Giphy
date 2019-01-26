@@ -119,3 +119,15 @@ h1 {
     color: #00eeff;
     border: 2px solid #00eeff;
 }
+
+.displayingGifs {
+    display:block;
+    margin: 0 auto; 
+    border: 2px solid #00eeff;      
+}
+
+p {
+    display:block;
+    color: #00eeff;
+    text-align: center;
+}
