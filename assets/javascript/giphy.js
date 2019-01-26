@@ -1,16 +1,14 @@
-var x = document.getElementById("myAudio");
+// Soundtrack //
 
+var x = document.getElementById("myAudio");
 
 function playAudio() {
     x.play();
 }
 
-
 // / Document Ready //
 
 $(document).ready(function() {
-
-
 
 // Variables for topic array and new search buttons //
 
