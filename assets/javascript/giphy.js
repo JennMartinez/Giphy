@@ -67,11 +67,11 @@ console.log(response);
 
 // Ratings restriction and visibility //
 
-        if (outcome[i].rating !== "r" && outcome[i].rating !== "pg-13") {
+        if (outcome[i].rating !== "R" && outcome[i].rating !== "PG-13") {
             
             var gif = $("<div>");
             var rating = outcome[i].rating;
-            var rateResult = $("<p>").text("Rating: " + outcome[i].rating);
+            var rateResult = $("<p>").text("RATING - " + outcome[i].rating);
             var themeImg = $("<img>");
 
             themeImg.attr("src", outcome[i].images.fixed_height_still.url);
