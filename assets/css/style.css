@@ -5,30 +5,40 @@ body {
 h1 {
     font-family: 'Faster One';
     font-size: 70px;
+    /* color: #00eeff; */
     color: #00eeff;
     letter-spacing: 8px;
-    text-align: center
+    text-align: center;
+    margin-top: 10px;
+    text-shadow:
+		-1px -1px 0 rgb(233, 43, 148),
+        1px -1px 0 rgb(233, 43, 148),
+        -1px 1px 0 rgb(255, 217, 0),
+		1px 1px 0 rgb(255, 217, 0);
 }
 
 /* Topic Buttons */
 
 .topics {
-    background-color: #00eeff;
-    margin-top: 1px;
-    border: 2px solid rgb(233, 43, 148);
-    width: 12%;
+    width: 13%;
     text-align: center;
-    color: rgb(233, 43, 148);
     display:block; 
     margin:0 auto;
     font-family: 'Faster One'; 
-    font-size: 15px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(to bottom,#00eeff 0%,rgb(165, 0, 180) 100%);
+    background-blend-mode: normal;
+    margin-top: 2px;
+    border: 2px solid rgb(233, 43, 148);
+    color: rgb(255, 217, 0);
 }
 
 .topics:hover {
     background-color: rgb(233, 43, 148);
     color: #00eeff;
-    border: 2px solid #00eeff;
+    border: 2px solid rgb(255, 217, 0);
 }
 
 /* Search Bar Title */
@@ -39,17 +49,18 @@ h1 {
     color: #00eeff;
 }
 #font {
-    /* text-align: center; */
     background-color: rgb(233, 43, 148);
     color: #00eeff;
-    border: 2px solid #00eeff;
-    padding-left: 22px;
-    padding-right: 22px;
+    border: 2px solid rgb(255, 217, 0);
+    padding-left: 23px;
+    padding-right: 23px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: 'Faster One';
     letter-spacing: 3px;
-    font-size: 17px;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom,#00eeff 0%,rgb(165, 0, 180) 100%);
+    background-blend-mode: normal;
 }
 
 #font:hover {
@@ -62,25 +73,28 @@ h1 {
 /* Physical Search Bar */
 
 #search-bar {
-    /* text-align: center; */
-    width: 15%;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    width: 16%;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background-image: linear-gradient(to bottom,#00eeff 0%,rgb(165, 0, 180) 100%);
+    background-blend-mode: normal;
+    border: 2px solid rgb(255, 217, 0);
 }
 
 /* Submit Button */
 
 #sbtn {
-    background-color: rgb(233, 43, 148);
     color: #00eeff;
-    border: 2px solid #00eeff;
+    border: 2px solid rgb(255, 217, 0);
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Faster One';
     letter-spacing: 3px;
     padding-left: 25px;
     padding-right: 25px;
+    background-image: linear-gradient(to bottom,#00eeff 0%,rgb(165, 0, 180) 100%);
+    background-blend-mode: normal;
 }
 
 #sbtn:hover {
@@ -104,8 +118,4 @@ h1 {
     background-color: rgb(233, 43, 148);
     color: #00eeff;
     border: 2px solid #00eeff;
-}
-
-outcome.rating {
-    color: rgb(233, 43, 148);
 }

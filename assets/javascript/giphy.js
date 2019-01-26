@@ -1,6 +1,16 @@
+var x = document.getElementById("myAudio");
+
+
+function playAudio() {
+    x.play();
+}
+
+
 // / Document Ready //
 
 $(document).ready(function() {
+
+
 
 // Variables for topic array and new search buttons //
 
@@ -33,6 +43,8 @@ function getButton(topic) {
 $("#button-grp").on("click", ".topics", function() {
 console.log("working");
 var name = $(this).attr("data-topic");
+playAudio();
+
 
 // Store Giphy API URL for "topics" images //
 
@@ -120,6 +132,5 @@ $("#gif-placement").on("click", ".displayingGifs", function() {
           $(this).attr("data-state", "still");
         }
       });
-
 populateButtons();
 });

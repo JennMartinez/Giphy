@@ -5,7 +5,7 @@ Endless Retro 80s!
 
 - The page will automatically generate 10 buttons, each has an 80s theme.
 
-- If the user clicks on one of the ten buttons, gif's related to that button theme will appear. 
+- When the user clicks on one of the ten buttons, gif's related to that button theme will appear, and an 80s soundtrack will start playing. 
 
 - Once the gif's are generated, the gif will be "still" (no animation).
 
