@@ -1,6 +1,10 @@
 # Giphy
 Endless Retro 80s!
 
+ https://jennmartinez.github.io/Giphy/
+
+- Before beginning, make sure that your volume is turned on for an awesome sound experience! 
+
 - The theme of this Giphy page is, 1980s.
 
 - The page will automatically generate 10 buttons, each has an 80s theme.
